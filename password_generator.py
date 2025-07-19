@@ -19,5 +19,11 @@ def main():
     password = generate_password(length)
     print(f"\nGenerated password: {password}")
 
+    save = input("Would you like to save this password to a file? (y/n): ").lower()
+    if save == 'y':
+        with open("passwords.txt", "a") as file:
+            file.write(password + "\n")
+        print("Password saved to passwords.txt")               
+
 if __name__ == "__main__":
     main()   
