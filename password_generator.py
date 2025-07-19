@@ -17,7 +17,7 @@ def main():
     print("This is a password generator.")
     length = int(input("Enter password length: "))
     password = generate_password(length)
-    print(f"\Generated password: {password}")
+    print(f"\nGenerated password: {password}")
 
 if __name__ == "__main__":
     main()   
